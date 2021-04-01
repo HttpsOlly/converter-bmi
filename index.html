@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>BMI Calculator</title>
+    <script src="./js/BMI.js" type="module"></script>
+    <link rel="stylesheet" type="text/css" href="../styles/reset.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="./styles/bmi-styles.css" media="screen" />
+    <style>
+        input[type="submit"] {
+            background-color: pink;
+            color: #000000;
+            border-radius: 50px;
+            padding: 5px 10px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <ol>
+                <li class="navbar"><a href="../converter/index.html">Converter Home</a></li>
+                <li class="navbar"><a href="./index.html">BMI Calculator</a></li>
+                <li class="navbar"><a href="../palindrome/index.html">Palindrome</a></li>
+            </ol>
+        </nav>
+    </header>
+
+    <div id=graph>
+    </div>
+
+    <form id=converter action=index.html method=get>
+        <p>Measurement Converter<br>Select your units below</p>
+
+        <label for=BMI-height>Height (cm):</label>
+        <input id=BMI-height type=text>
+
+        <label for=BMI-weight>Weight (kg):</label>
+        <input id=BMI-weight type=text>
+
+        <input type="submit" value="Convert">
+
+        <input id=BMI-output type=text disabled>
+        <p id=BMI-interpret></p>
+    </form>
+</body>
+
+</html>

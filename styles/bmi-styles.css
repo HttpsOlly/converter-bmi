@@ -1,0 +1,65 @@
+body {
+    background-image: linear-gradient(to right, aliceblue, #7ac1ff);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+input[type=text] {
+    font-size: 40px;
+    width: 3em;
+    text-align: center;
+    border-radius: 30px;
+    margin-left: 100px;
+}
+
+select#measurement {
+    background-color: aqua;
+    display: block;
+    width: 300px;
+}
+
+fieldset {
+    border: 2px solid silver;
+}
+
+.navbar {
+    border-style: ridge;
+    background-color: #b33076;
+    border-width: 1px;
+    display: inline;
+}
+
+.cell {
+    width: 2.7em;
+    height: 1.7em;
+    display: inline-block;
+    border: 1px solid silver;
+    overflow: hidden;
+    text-align: center;
+    line-height: 1.5;
+    padding: 4px 0px 0px 0px;
+}
+.cell:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+.underweight {
+    background-color: cornflowerblue;
+}
+.healthy {
+    background-color: limegreen;
+}
+.overweight {
+    background-color: orange;
+}
+.obese {
+    background-color: red;
+    color: cornsilk;
+}
+  
